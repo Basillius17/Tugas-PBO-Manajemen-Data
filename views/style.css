@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #c9cdd4;
+    color: #1e2a3a;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: #1a2b45;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #2e4a72;
+}
+header h1 {
+    color: #e8edf5;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+header span {
+    color: #7a9cc0;
+    font-size: 0.82rem;
+}
+
+/* MAIN */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 36px 24px;
+}
+
+/* CARD */
+.card {
+    background: #f0f2f5;
+    border: 1px solid #b0b8c6;
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(26,43,69,0.08);
+}
+
+/* TOOLBAR */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.toolbar h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1a2b45;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 9px 20px;
+    border-radius: 6px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.18s;
+}
+.btn-navy  { background: #1a2b45; color: #e8edf5; }
+.btn-navy:hover  { background: #2e4a72; }
+.btn-blue  { background: #2e6da4; color: #fff; }
+.btn-blue:hover  { background: #3a80be; }
+.btn-grey  { background: #6b7a8d; color: #fff; }
+.btn-grey:hover  { background: #7d8ea0; }
+.btn-red   { background: #b84040; color: #fff; }
+.btn-red:hover   { background: #cc5252; }
+.btn-sm { padding: 5px 13px; font-size: 0.78rem; }
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+thead tr {
+    background: #1a2b45;
+}
+th {
+    padding: 13px 16px;
+    text-align: left;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aec3db;
+    font-weight: 600;
+}
+td {
+    padding: 13px 16px;
+    border-top: 1px solid #c2c9d4;
+    font-size: 0.88rem;
+    vertical-align: middle;
+    color: #2b3a4e;
+}
+tr:nth-child(even) td { background: #e6e9ee; }
+tr:hover td { background: #d8dde6; }
+
+.actions { display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* BADGE */
+.badge {
+    display: inline-block;
+    padding: 3px 11px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.badge-tersedia { background: #d4eadb; color: #2d6e45; border: 1px solid #a8d4b4; }
+.badge-penuh    { background: #f0d4d4; color: #8b2020; border: 1px solid #d4a0a0; }
+
+/* FORM */
+.form-wrap {
+    max-width: 560px;
+    margin: 0 auto;
+}
+.form-wrap h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a2b45;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #b0b8c6;
+}
+.field { margin-bottom: 18px; }
+.field label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #4a5a6e;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 7px;
+}
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 10px 14px;
+    background: #fff;
+    border: 1px solid #b0b8c6;
+    border-radius: 6px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #1e2a3a;
+    transition: border-color 0.18s;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: #2e6da4;
+    box-shadow: 0 0 0 3px rgba(46,109,164,0.12);
+}
+.field textarea { resize: vertical; min-height: 70px; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-actions { display: flex; gap: 12px; margin-top: 24px; }
+
+.alert { padding: 11px 16px; border-radius: 6px; margin-bottom: 18px; font-size: 0.88rem; }
+.alert-error   { background: #f5dada; border: 1px solid #d4a0a0; color: #7a2020; }
+.alert-success { background: #d4eadb; border: 1px solid #a8d4b4; color: #1e5c34; }
+
+.empty { text-align: center; padding: 50px; color: #6b7a8d; font-size: 0.95rem; }
